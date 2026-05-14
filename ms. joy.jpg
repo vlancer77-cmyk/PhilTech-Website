@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhilTech-GMA</title>
+  <link rel="stylesheet" href="Contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Kadwa', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .form-container {
+      background-color: #7C0A02;
+      padding: 45px;
+      margin: 150px auto;
+      border-radius: 30px;
+      width: 90%;
+      max-width: 500px;
+      opacity: 0.95;
+    }
+
+    .form-group-h2 label {
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .form-group-h2 {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      font-size: 14px;
+    }
+
+    select {
+      cursor: pointer;
+    }
+
+    .checkbox-container {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .checkbox-text {
+      color: white;
+      font-size: 12px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .checkbox-text a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .submit-btn {
+      background-color: #F1D915;
+      color: #7C0A02;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Kadwa', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #e6c842;
+    }
+
+    .required {
+      color: #ffffff;
+    }
+
+    .form-alert {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 12px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      z-index: 9999;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .form-alert.success { background-color: #28a745; }
+    .form-alert.error { background-color: #dc3545; }
+    .form-alert.warning { background-color: #ffc107; color: black; }
+
+    @media (max-width: 600px) {
+      .header-left h1 {
+        font-size: 18px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .form-container {
+        margin: 20px;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <img src="logo w.out name.png" alt="PhilTech Logo" class="logo">
+      <h1 class="school-name">PhilTech-GMA</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="philtech_home.html">Home</a></li>
+        <li><a href="Faculty & Staff.html">Faculty & Staff</a></li>
+        <li><a href="Admissions.html">Admissions</a></li>
+        <li><a href="College.html">College</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <form id="studentForm">
+      <div class="form-group-h2">
+        <label for="studenttype">Student Type <span class="required">*</span></label>
+        <select id="studenttype" name="studenttype" required>
+          <option value=""> </option>
+          <option value="Freshmen">Freshmen</option>
+          <option value="Transferee">Transferee</option>
+        </select>
+      </div>
+
+      <div class="form-group-h2">
+        <label for="firstName">First Name <span class="required">*</span></label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+
+      <div class="form-group-h2">
+        <label for="lastName">Last Name <span class="required">*</span></label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+
+      <div class="form-group-h2">
+        <label for="email">Email <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group-h2">
+        <label for="phoneNumber">Phone Number <span class="required">*</span></label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+      </div>
+
+      <div class="form-group-h2">
+        <label for="programInterest">Program of Interest</label>
+        <select id="programInterest" name="programInterest">
+          <option value=""> </option>
+          <option value="College">College</option>
+        </select>
+      </div>
+
+      <div class="form-group-h2">
+        <label for="preferredProgram">Preferred Program <span class="required">*</span></label>
+        <select id="preferredProgram" name="preferredProgram" required>
+          <option value=""> </option>
+          <option value="Bachelor of Science in Office Administration">BS in Office Administration</option>
+          <option value="Bachelor of Science in Computer Science">BS in Computer Science</option>
+          <option value="BS in TECH-VOC Ed - Food & Service Management">BTVTED - Food & Service Management</option>
+        </select>
+      </div>
+
+      <div class="form-group-h2">
+        <label for="foundOut">How did you find out about PhilTech <span class="required">*</span></label>
+        <select id="foundOut" name="foundOut" required>
+          <option value=""> </option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Referred by Families/Relative">Referred by Families/Relative</option>
+          <option value="Referred by someone from PhilTech">Referred by someone from PhilTech</option>
+          <option value="Referred by Friend">Referred by Friend</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent" class="checkbox-text">
+          By submitting this form, I allow PhilTech-GMA to collect, process, and use the personal information...
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+  </div>
+
+ 
+<footer class="footer">
+  <div class="footer-banner">
+    <img src="banner.jpg" alt="Campus Banner" class="footer-banner-img" />
+
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="logo w.out name.png" class="footer-logo" alt="PhilTech Logo" />
+        <h2>PhilTech-GMA</h2>
+        <p>Philippine Technological Institute of Science Arts and Trade Inc.</p>
+        <h3>CRDM Governor's Drive, Brgy. Maderan<br>Gen. Mariano Alvarez, Cavite 4117, Philippines</h3>
+        <h4>Main Campus</h4>
+        <p>Tanay, Rizal</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="highlight-text">
+          <p>years of proven</p>
+          <h1>14</h1>
+          <h2>Quality</h2>
+          <h3>Education</h3>
+        </div>
+
+        </div>
+        <div class="contact-info">
+          <div class="icon-line">
+            <img src="ig icon.png" class="social-icon" alt="Instagram" />
+            <p>Philtech GMA</p>
+          </div>
+          <div class="icon-line">
+            <img src="phone icon.png" class="social-icon" alt="Phone" />
+            <p>(+63) 997-224-0222</p>
+          </div>
+          <div class="icon-line">
+            <img src="fb icon.png" class="social-icon" alt="Facebook" />
+            <p>PhilTech-GMA</p>
+          </div>
+          <div class="icon-line">
+            <img src="email icon.png" class="social-icon" alt="Email" />
+            <p>philtech.edu01@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2025. All Rights Reserved | PhilTech - GMA</p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    document.getElementById('studentForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+
+      const formData = {
+        data: {
+          studenttype: form.studenttype.value,
+          firstName: form.firstName.value,
+          lastName: form.lastName.value,
+          email: form.email.value,
+          phoneNumber: form.phoneNumber.value,
+          programInterest: form.programInterest.value,
+          preferredProgram: form.preferredProgram.value,
+          foundOut: form.foundOut.value,
+          consent: form.consent.checked ? "Yes" : "No"
+        }
+      };
+
+      const SHEETDB_API_URL = 'https://sheetdb.io/api/v1/iiv736ua6qt5v';
+
+      fetch(SHEETDB_API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      })
+        .then(response => {
+          if (response.ok) {
+            showAlert("✅ Your form was submitted successfully!", "success");
+            form.reset();
+          } else {
+            showAlert("❌ Submission failed. Please try again.", "error");
+          }
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          showAlert("⚠️ An error occurred. Please check your internet connection.", "warning");
+        });
+    });
+
+    function showAlert(message, type) {
+      const alertBox = document.createElement("div");
+      alertBox.textContent = message;
+      alertBox.className = `form-alert ${type}`;
+      document.body.appendChild(alertBox);
+
+      setTimeout(() => {
+        alertBox.remove();
+      }, 4000);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Kadwa', serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: rgb(255, 233, 233);
+}
+
+.header {
+    font-family: 'Poppins', 'Kadwa', serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #7C0A02;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;  /* Adjust height as needed */
+    z-index: 1000;
+    /* Add these properties for more styling */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Adds shadow */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    padding: 0.1rem;
+    border-radius: 20%;
+    width: 90px;
+    height: 90px;
+}
+
+.school-name {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu-header {
+    background-color: #4e0404;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li {
+    padding: 0.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F1D915;  /* Gold color on hover */
+}
+
+/* Add an active state for the current page */
+nav ul li a.active {
+    color: #F1D915;
+    border-bottom: 2px solid #F1D915;
+}
+
+
+
+.welcome-banner {
+    position: relative;
+    text-align: center;
+    color: #4e0404;
+    background-color: rgba(124, 10, 2, 0.9);
+    height: 800px;
+}
+
+.banner-content {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem 4rem;
+    width: 1350px;
+    z-index: 1;
+}
+
+.banner-content h2 {
+    color: #F1D915;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    font-size: 3.5rem;
+    margin: 2rem;
+    text-align: center;
+    line-height: 1;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 1500px;
+}
+
+.school-quote {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: #F1D915;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0.5rem;    /* Add space above quote */
+    margin-bottom: 2rem; /* Add space below quote */
+}
+
+.enroll-now.banner {
+    width: 100%;
+    height: auto;
+    margin: 0rem 0;  /* Adds space above and below banner */
+    padding: 0 0rem; /* Adds padding on the sides */
+    overflow: hidden;
+}
+
+.enroll-img {
+    width: 100%;
+    height: 755px;  /* Adjust this value as needed */
+    object-fit: cover;
+    border-radius: 8px;  /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: adds subtle shadow */
+}
+
+.enroll-btn {
+    background-color: #7C0A02;
+    color: white;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font: 'poppins', 'serif';
+    font-weight: 550;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.enroll-btn:hover {
+    background-color: #c20f02;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Kadwa';
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F1D915; /* Change to a lighter color on hover */
+}
+
+.location-section {
+    padding: 3rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.location-map {
+    font-family: 'kadwa', serif;
+    font-size: 2rem;
+    font-weight: 999;
+    color: #7C0A02;
+    text-align: center; 
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+
+.map {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.map iframe {
+    width: 100%;
+    max-width: 1700px;
+    height: 80vh; /* Adjust height as needed */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+    font-family: 'kadwa', serif;
+    font-size: 2rem;
+    font-weight: 999;
+    color: #7C0A02;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    transform: translateY(-30px);
+}
+
+.contact-us {
+    width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    font-family: 'kadwa', serif;
+    font-size: 1.8rem;
+    font-weight: 999;
+    color: #ffffff;
+    text-align: center;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    letter-spacing: 1px;
+}
+
+.contact-Container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #7C0A02;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #FFBA25;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #be3f36;
+    box-shadow: 0 0 5px rgba(179, 65, 56, 0.2);
+    width: 100%;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #FFBA25;
+    color: #7C0A02;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ffffff;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-image img {
+        max-width: 100%;
+        height: auto;
+        transform: none;
+    }
+    .contact-Container-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+.footer {
+  position: relative;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.footer-banner-img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+  margin-top: -50px;
+}
+
+.footer-left {
+  max-width: 600px;
+}
+
+.footer-logo {
+  width: 300px;
+  height: 300px;
+}
+
+.footer-left h2 {
+  margin-top: -250px;
+  margin-left: 280px;
+  font-size: 28px;
+  color: white;
+}
+.footer-left p{
+    width: 400px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.footer-left p, .footer-left h3, .footer-left h4, .footer-left h5 {
+  margin-left: 280px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.contact-info {
+  margin-top: 120px;
+}
+
+.icon-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.social-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.icon-line p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-right {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  color: white;
+  z-index: 3;
+  display: flex;
+  margin-top: -50px;
+}
+
+.footer-right h1 {
+  display: flex;
+  font-size: 64px;
+  color: rgb(207, 160, 39);
+  margin-left: 20px;
+  margin-top: -60px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-right p {
+  font-size: 20px;
+  margin-left: 100px;
+  color: rgb(207, 160, 39);
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-right h2 {
+  display: flex;
+  font-size: 36px;
+  color: rgb(207, 160, 39);
+  margin-left: 100px;
+  margin-top: -80px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-right h3 {
+  display: flex;
+  font-size: 28px;
+  color: rgb(207, 160, 39); 
+  margin-left: 80px;
+  margin-top: -30px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(87, 49, 49, 0.509);
+  position: relative;
+  z-index: 2;
+  font-size: 14px;
+  color: #ccc;
+} 
+.form-result {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  padding: 12px 20px;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 90%;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  display: none;
+  text-align: center;
+
+  transition: all 0.5s ease;
+}
+
+/* Show class used for animation */
+.form-result.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Alert types */
+.form-result.success {
+  background-color: #e6f4ea;
+  color: #207c42;
+  border: 1px solid #c5e8d3;
+}
+
+.form-result.error {
+  background-color: #fdecea;
+  color: #c0392b;
+  border: 1px solid #f5c6cb;
+}
+
+.form-result.warning {
+  background-color: #fff9e6;
+  color: #8a6d3b;
+  border: 1px solid #ffeeba;
+}

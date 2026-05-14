@@ -1,0 +1,72 @@
+.floating-dev-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+
+.floating-dev-icon:hover {
+  background-color: #555;
+}
+
+.floating-dev-info {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #6B0000;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 240px;
+  font-family: 'Poppins', sans-serif;
+  display: none;
+  z-index: 999;
+}
+
+.floating-dev-info h4 {
+  margin: 0 0 5px;
+  font-size: 15px;
+  color: white;
+}
+
+.floating-dev-info p {
+  margin: 3px 0;
+  font-size: 13px;
+  color: white;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  margin: 6px 4px 0 0;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-links a.fb:hover {
+  background-color: #3b5998;
+  color: white;
+}
+
+.social-links a.ig:hover {
+  background-color: #E1306C;
+  color: white;
+}

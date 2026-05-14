@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhilTech-GMA</title>
+    <link rel="stylesheet" href="College.css">
+    <link rel="stylesheet" href="dev-info-style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="logo w.out name.png" alt="PhilTech Logo" class="logo">
+            <h1 class="school-name">PhilTech-GMA</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="philtech_home.html">Home</a></li>
+                <li><a href="Faculty & Staff.html">Faculty & Staff</a></li>
+                <li><a href="Admissions.html">Admissions</a></li>
+                <li><a href="College.html">College</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section class="welcome-banner">
+            <div class="banner-content">
+                <h2>Philippine Technological Institute of Science Arts and Trade</h2>
+                <p class="school-quote">"Global Success Through Academic Excellence"</p>
+                <a href="enrollment form.html" class="enroll-btn">Enroll Now</a>
+            </div>
+        </section>
+        
+
+
+    <main>
+        <section class="College-Courses">
+            <div class="College-Courses-banner">
+                <h2>COLLEGE COURSES</h2>
+            </div>
+            <div class="College-Courses-Content">
+              <p class="bscs-quote">BACHELOR OF SCIENCE IN COMPUTER SCIENCE<br />
+                <br />
+                Our Program Equips Students with the Skills Needed for Thriving Careers in Computer Science. From Programming to AI, our Comprehensive Curriculum Covers it all. Gain Practical Experience Through Projects and Internships, Preparing you for Software Development, Data Analysis, and IT Consulting Role.</p>
+              <p class="bsoa-quote">BACHELOR OF SCIENCE IN OFFICE ADMINISTRATION<br />
+                <br />
+                It Focuses on Both, Theoretical Understanding of Teaching and Practical Competencies in this Field. Graduates can Become Effective Educators in Areas such as Culinary, Arts, Restaurant Operations, Food Safety, Business Management, and Customer Service.</p>
+              <p class="btvted-quote">BACHELOR OF SCIENCE IN TOURISM AND HOTEL MANAGEMENT<br />
+                <br />
+                Graduates of this Program are Equipped to Perform a Wide Variety of Administrative Tasks, Including Clerical Duties, Personnel Management, Events Coordination, and Customer Service.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+<footer class="footer">
+  <div class="footer-banner">
+    <img src="banner.jpg" alt="Campus Banner" class="footer-banner-img" />
+
+    <div class="footer-content">
+      <div class="footer-left">
+        <img src="logo w.out name.png" class="footer-logo" alt="PhilTech Logo" />
+        <h2>PhilTech-GMA</h2>
+        <p>Philippine Technological Institute of Science Arts and Trade Inc.</p>
+        <h3>CRDM Governor's Drive, Brgy. Maderan<br>Gen. Mariano Alvarez, Cavite 4117, Philippines</h3>
+        <h4>Main Campus</h4>
+        <p>Tanay, Rizal</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="highlight-text">
+          <p>years of proven</p>
+          <h1>14</h1>
+          <h2>Quality</h2>
+          <h3>Education</h3>
+        </div>
+
+        </div>
+        <div class="contact-info">
+          <div class="icon-line">
+            <img src="ig icon.png" class="social-icon" alt="Instagram" />
+            <p>Philtech GMA</p>
+          </div>
+          <div class="icon-line">
+            <img src="phone icon.png" class="social-icon" alt="Phone" />
+            <p>(+63) 997-224-0222</p>
+          </div>
+          <div class="icon-line">
+            <img src="fb icon.png" class="social-icon" alt="Facebook" />
+            <p>PhilTech-GMA</p>
+          </div>
+          <div class="icon-line">
+            <img src="email icon.png" class="social-icon" alt="Email" />
+            <p>philtech.edu01@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Copyright 2025. All Rights Reserved | PhilTech - GMA</p>
+    </div>
+  </div>
+</footer>
+<div class="floating-dev-icon" id="devToggle">
+  👤
+</div>
+
+<div class="floating-dev-info" id="devInfo">
+  <h4>Chris Thiego G. Baghari</h4>
+  <p>Email: christhiegobaghari@gmail.com</p>
+  <p>Phone: 0994-246-1783</p>
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1J3adQnzSb/" target="_blank" class="fb" title="Facebook">f</a>
+    <a href="https://www.instagram.com/apzillia?igsh=bjRsajI2cXd0OXc=" target="_blank" class="ig" title="Instagram">i</a>
+  </div>
+</div>
+<script>
+  const devIcon = document.getElementById('devToggle');
+  const devInfo = document.getElementById('devInfo');
+
+  devIcon.addEventListener('click', () => {
+    devInfo.style.display = devInfo.style.display === 'block' ? 'none' : 'block';
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', function(event) {
+    if (!devIcon.contains(event.target) && !devInfo.contains(event.target)) {
+      devInfo.style.display = 'none';
+    }
+  });
+</script>
+</html>
